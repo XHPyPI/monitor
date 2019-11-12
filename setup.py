@@ -2,7 +2,7 @@
 '''
 @Author: lamborghini1993
 @Date: 2019-11-12 15:35:01
-@UpdateDate: 2019-11-12 15:35:01
+@UpdateDate: 2019-11-12 17:49:07
 @Description: 发布包的配置
 '''
 
@@ -14,7 +14,7 @@ with open(os.path.join(os.path.dirname(__file__), "README.md")) as readme:
 
 setup(
     name='xhmonitor',
-    version="0.0.1",
+    version="0.0.2",
     author="lamborghini1993",
     author_email="1323242382@qq.com",
     description='a lib for Performance monitoring',
@@ -27,5 +27,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=['pyprof2calltree'],
     python_requires='>=3.6',
 )
